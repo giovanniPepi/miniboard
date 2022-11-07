@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+
+  h1=title
+  form(method='POST', action="/new")
+    p 
+      input(class='field', type='textbox', name='messageText', value='', placeholder='Enter a message: ', required=true, maxlength='100')
+      br
+      input(class='field', type='text', name='username', value='', placeholder='Name', required=true, maxlength='35')
+    input(class='submit', type='submit', value='Submit')
